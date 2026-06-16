@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Viajes</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
 </head>
 <body>
-    <img src="https://images.pexels.com/photos/29734962/pexels-photo-29734962.jpeg" width="500" alt="Description of the image">
+
+<body>
+    <header>
+        <h1>Mi Página de Viajes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Destinos Recomendados</h2>
+            <article>
+                <h3>París, Francia</h3>
+                <img src="img/paris.jpg" alt="Torre Eiffel en París">
+                <p>Descubre la ciudad del amor, sus museos, gastronomía y la icónica Torre Eiffel.</p>
+            </article>
+            <article>
+                <h3>Tokio, Japón</h3>
+                <img src="img/tokio.jpg" alt="Calle iluminada de Tokio">
+                <p>Sumérgete en la cultura ancestral y la tecnología futurista de Tokio.</p>
+            </article>
+            <article>
+                <h3>Machu Picchu, Perú</h3>
+                <img src="img/machu-picchu.jpg" alt="Ruinas de Machu Picchu">
+                <p>Explora la maravilla del mundo enclavada en los Andes peruanos.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Paquetes de Viaje</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Días</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>París</td>
+                        <td>5 días</td>
+                        <td>$1,200 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Tokio</td>
+                        <td>7 días</td>
+                        <td>$2,300 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Machu Picchu</td>
+                        <td>4 días</td>
+                        <td>$900 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Reserva tu Viaje</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino">
+                    <option value="paris">París</option>
+                    <option value="tokio">Tokio</option>
+                    <option value="machu-picchu">Machu Picchu</option>
+                </select>
+
+                <label for="fecha">Fecha de viaje:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <button type="submit">Solicitar Reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mi Página de Viajes. Todos los derechos reservados.</p>
+        <p>Síguenos en redes sociales: Facebook | Instagram | Twitter</p>
+    </footer>
+</body>
 </body>
 </html>
